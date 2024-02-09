@@ -16,9 +16,9 @@
       fetch('https://e53c-217-38-228-18.ngrok-free.app/button-press', {
         method: 'POST',
         headers: {
-          'Content-Type': 'application/x-www-form-urlencoded',
+          'Content-Type': 'application/json', // Use 'application/json' if your server expects JSON data
         },
-        body: 'button=pressed', // You can send additional data if needed
+        body: JSON.stringify({ button: 'pressed' }), // Send data as JSON
       })
       .then(response => response.text())
       .then(data => {
