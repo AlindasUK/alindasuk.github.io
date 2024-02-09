@@ -13,12 +13,12 @@
   <script>
     document.getElementById('pressButton').addEventListener('click', function() {
       // Make an AJAX POST request to your server when the button is pressed
-      fetch('https://e53c-217-38-228-18.ngrok-free.app/button-press', {
+      fetch('https://437c-217-38-228-18.ngrok-free.app/button-press', {
         method: 'POST',
         headers: {
-          'Content-Type': 'application/json', // Use 'application/json' if your server expects JSON data
+          'Content-Type': 'application/json',
         },
-        body: JSON.stringify({ button: 'pressed' }), // Send data as JSON
+        body: JSON.stringify({ button: 'pressed' }),
       })
       .then(response => response.text())
       .then(data => {
