@@ -4,7 +4,124 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        html, body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.maincontainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.displaycontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width:  60%;
+    background-color: #f0f0f0;
+}
+.gamecontainer {
+    display: flex;
+    flex-direction: row; /* Arrange children side by side */
+    justify-content: center; /* Optional: center horizontally */
+    align-items: flex-start; /* Optional: align to top */
+    height: 100%;
+    width:  40%;
+    background-color: #e2e1cc;
+}
+
+#gcolumn1 {
+    width: 25%;
+    height: 120%;
+    background-color: #ff0000;
+}
+#gcolumn2 {
+    width: 25%;
+    height: 120%;
+    background-color: #ffbb00;
+}
+#gcolumn3 {
+    width: 25%;
+    height: 120%;
+    background-color: #51ff00;
+}
+#gcolumn4 {
+    width: 25%;
+    height: 120%;
+    background-color: #00ff73;
+}
+.iconcontainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end; /* Align children to the bottom */
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.arrow {
+    position: absolute;
+    left: 10px;
+    right: 10px;
+    bottom: 25%; /* Move controls higher up */
+    width: calc(100% - 20px);
+    height: auto;
+}
+/* Add at the end of styles.css */
+.arrow-effect {
+    box-shadow: 0 0 20px 10px #fff, 0 0 40px 20px #ff0;
+    transition: box-shadow 0.1s;
+}
+/* Add at the end of styles.css */
+.note-arrow {
+    z-index: 2;
+    filter: drop-shadow(0 0 10px #0008);
+    transition: box-shadow 0.1s;
+}
+/* Add at the end of styles.css */
+.arrow-miss {
+    box-shadow: 0 0 20px 10px #ff0000, 0 0 40px 20px #ff0000;
+    transition: box-shadow 0.1s;
+}
+/* Add at the end of styles.css */
+.arrow-hit {
+    box-shadow: 0 0 20px 10px #00ff00, 0 0 40px 20px #00ff00;
+    transition: box-shadow 0.1s;
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+}
+.songoverpannel {
+    height: 100%;
+    width: 40%;
+    position: absolute;
+    opacity: 1;
+}
+.songovertext {
+    text-align: center;
+    padding: 20px;
+    padding: 10px;
+    margin: 10px;
+    margin-top: 50%;
+    background-color: rgb(85, 29, 29);
+}
+</style>
     <script src="script.js" defer></script>
 </head>
 <main class="maincontainer">
@@ -51,4 +168,5 @@
         </div>
     </div>
 </main>
+
 </html>
