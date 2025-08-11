@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<main class="maincontainer">
+    <div class="displaycontainer">
+        <div class="display">
+            <h1>Welcome to the Game</h1>
+            <p>Get ready to play!</p>
+        </div>
+        <div class="controls">
+            <input type="file" id="songFile" accept=".txt">
+            <input type="file" id="trackFile" accept=".mp3">
+            <button id="playSong">Play Song</button>
+        </div>
+    </div>
+    <div class="gamecontainer">
+        <div id="gcolumn1">
+            <div class="iconcontainer">
+                <img src="down-arrow.png" class="arrow" alt="Arrow" style="rotate: 1.57079632679rad;">
+            </div>
+        </div>
+                <div id="gcolumn2">
+            <div class="iconcontainer">
+                <img src="down-arrow.png" class="arrow" alt="Arrow" style="rotate: 0rad;">
+            </div>
+        </div>
+        <div id="gcolumn3">
+            <div class="iconcontainer">
+                <img src="down-arrow.png" class="arrow" alt="Arrow" style="rotate: 3.14159265358979rad;">
+            </div>
+        </div>
+        <div id="gcolumn4">
+            <div class="iconcontainer">
+                <img src="down-arrow.png" class="arrow" alt="Arrow" style="rotate: 4.71238898038rad;">
+            </div>
+        </div>
+        <div class="songoverpannel">
+            <div class="songovertext">
+                <h1>Song Over</h1>
+                <p>Thanks for playing!</p>
+                <p>Score: <span id="score">0</span></p>
+                <p>Rank: <span id="rank">Beginner</span></p>
+                <button id="restartGame">Restart Game</button>
+            </div>
+        </div>
+    </div>
+</main>
+</html>
